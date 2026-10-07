@@ -1,6 +1,6 @@
 # Ternary-Bonsai-2-27B 本地部署（llama-prism / CUDA）
 
-已在本机实测调优并跑通。模型：`Ternary-Bonsai-2-27B-Abliterated-PTQ1_0.gguf`（5.54 GiB，PTQ1_0 三值量化，1.75 bpw g128，基于 Qwen3.8 27B 的混合 SSM+注意力架构）。
+已在本机实测调优并跑通。模型：`Ternary-Bonsai-2-27B-Abliterated-PTQ1_0.gguf`（5.54 GiB，PTQ1_0 三值量化，1.75 bpw g128），基于 **Qwen3.8 27B** 的混合 SSM+注意力架构。GGUF 元数据里的 `general.architecture` 仍是 `qwen35`——llama.cpp 的架构名滞后于版本号。
 
 服务当前监听 `http://127.0.0.1:8080`，提供 OpenAI 兼容 API。
 
